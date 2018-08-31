@@ -1,0 +1,35 @@
+ul{
+    padding-left: 0;
+}
+ul li{
+    list-style: none;
+}
+.task{
+    background: white;
+    box-shadow: darkgray 0 0 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+.task:hover{
+    background: #EDEFF0;
+}
+.edit-icon{
+    display: none;
+}
+.edit-icon:hover{
+    color:#6DAFF0
+}
+.task:hover .edit-icon{
+    display:block;
+}
+.delete-icon:hover{
+    color: #ff7a70
+}
+.list-name{
+    padding-bottom: 10px;
+}
+.blue{
+    color:#4F90F7
+}
