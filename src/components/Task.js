@@ -7,7 +7,7 @@ class Task extends React.Component{
     super(props)
     this.state={
       editing:false,
-      inputVale: '',
+      inputVale: this.props.task.text,
       listId: this.props.task.listId
     }
   }
@@ -57,8 +57,11 @@ class Task extends React.Component{
           <i className="fas fa-times float-right" onClick={this.closeEdit}></i>
           <form className={"form-inline"} onSubmit={this.handleSubmit}>
             <input className={"form-control w-75"} type="text" onChange={this.handleChange}
-              value={this.props.task.text}
+              defaultValue={this.state.inputVale}
             />
+            {/*<input className={"form-control w-75"} type="text" ref={node => this.input = node}*/}
+              {/*value={this.state.inputVale}*/}
+            {/*/>*/}
             <button className={"btn btn-info ml-3"}>Edit</button>
           </form>
           <div className={"mt-3"}>
